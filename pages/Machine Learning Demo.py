@@ -81,8 +81,8 @@ class StarClassification:
 
 # Initialize the StarClassification app
 if __name__ == "__main__":
-    model_path = "C:/Users/USER/Documents/GitHub/Infinite_Stratos_Project/exported_model/rf/svm/svm_Budget_model.pkl"  # Replace with your actual model file path
-    scaler_path = "C:/Users/USER/Documents/GitHub/Infinite_Stratos_Project/exported_model/rf/svm/svm_Budget_scaler.pkl"  # Replace with your actual scaler file path
+    model_path = "exported_model/rf/rf_Budget_model.pkl"  # Replace with your actual model file path
+    scaler_path = "exported_model/rf/rf_Budget_scaler.pkl"  # Replace with your actual scaler file path
 
     star_classifier = StarClassification()
     star_classifier.load_model(model_path, scaler_path)

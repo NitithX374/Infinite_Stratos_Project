@@ -4,16 +4,16 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 # Title and instructions
-st.title("Aerial Scene Image Classification")
-st.write("Upload an image and the model will classify it into one of the following classes: **cloudy, desert, green_area, water**.")
+st.title("การจำแนกประเภทรูปถ่ายทางดาวเทียม")
+st.write("อัปโหลดไฟล์ภาพ และโมเดลจะทำการจำแนกว่าเป็น กลุ่มเมฆ น้ำ พื้นที่สีเขียว หรือทะเลทราย")
 
 # File uploader for images
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("เลือกไฟล์ภาพ", type=["jpg", "jpeg", "png"])
 
 # Function to load the model (caching for performance)
 @st.cache_resource
 def load_classification_model():
-    model_path = "C:/Users/USER/Documents/GitHub/Infinite_Stratos_Project/exported_model/rf/NN/NN_save.keras"  # Replace with your actual model file path
+    model_path = "exported_model/rf/NN/NN_save.keras"  # Replace with your actual model file path
     model = tf.keras.models.load_model(model_path)
     return model
 
