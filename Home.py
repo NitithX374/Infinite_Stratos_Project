@@ -13,4 +13,5 @@ st.write("""
 """)
 
 # Display the dataset link
+st.markdown("[ดาวน์โหลด Dataset ได้ที่นี่](https://www.kaggle.com/datasets/brsdincer/star-type-classification)")
 st.markdown("[ดาวน์โหลด Dataset ได้ที่นี่](https://www.kaggle.com/datasets/mahmoudreda55/satellite-image-classification/data)")
