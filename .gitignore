@@ -1,4 +1,3 @@
 env_*
 _pycache_/
 data/*
-exported_model/rf/NN
